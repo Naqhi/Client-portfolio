@@ -283,7 +283,7 @@ h4,
 
 h5,
 .mil-h5 {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 150%;
 }
 @media screen and (max-width: 768px) {
@@ -399,7 +399,7 @@ a {
 }
 
 .mil-light-soft {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.988);
 }
 
 .mil-dark-soft {
@@ -479,6 +479,7 @@ a {
   overflow: hidden;
   width: 100%;
   padding-bottom: 140%;
+  transition: .2s ease-in;
 }
 .mil-img-frame img {
   position: absolute;
@@ -490,8 +491,12 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  
 }
-
+.mil-img-frame:hover{
+  border-bottom-left-radius: 266px;
+  border-top-right-radius: 266px;
+}
 /* -------------------------------------------
 
 link
@@ -1844,6 +1849,13 @@ banner
   border-top-right-radius: 266px;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: .3s ease-out;
+}
+.mil-portrait-frame img:hover{
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 266px;
+  border-top-left-radius: 266px;
 }
 .mil-portrait-frame .mil-nimbus {
   background: radial-gradient(50% 50% at 50% 50%, rgb(255, 152, 0) 0%, rgba(250, 168, 69, 0) 100%);
@@ -2295,7 +2307,8 @@ partners
   display: block;
 }
 .mil-partner-frame img {
-  width: 100%;
+  width: 140%;
+  height: 6vh;
 }
 
 /* -------------------------------------------
