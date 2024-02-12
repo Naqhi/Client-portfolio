@@ -2435,6 +2435,7 @@ services
 
 .mil-services-grid {
   /* border-top: solid 1px rgba(255, 255, 255, 0.1); */
+  justify-content: center;
 }
 .mil-services-grid .mil-services-grid-item {
   border-right: solid 1px rgba(255, 255, 255, 0.1);
